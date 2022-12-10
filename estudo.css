@@ -1,0 +1,45 @@
+.Estudosgrid{
+    display: grid; 
+    grid-template-columns: 1fr 4fr;
+    margin: 1rem;
+    gap: 2rem;      
+    justify-content: center;
+}
+
+.conhecimentos{    
+    font-size: 8rem;
+    word-break: break-all;
+    line-height: 0.7;
+    grid-column: 1;
+    grid-row: 1/4;
+    max-width: 3ch;
+    align-self: center;
+    justify-self: center;
+    color: rgba(255, 255, 255, 0.5);   
+    
+}
+
+.estudo-bloco{
+    border: solid white;
+    border-radius: 2rem;
+    background-color: rgba(128, 0, 128, 0.33);
+    grid-column: 2;
+    text-align: start;
+    padding: 1rem;
+    max-width: 60rem;   
+    display: grid;
+    grid-template-columns: 2, 1fr; 
+    line-height: 1;
+    
+   
+}
+
+.estudo-bloco h3{
+    color: rgba(255, 255, 255, 0.85);
+}
+.estudo-bloco h4{
+    color: rgba(255, 255, 255, 0.70);
+}
+.estudo-bloco h5{
+    color: rgba(255, 255, 255, 0.60);
+}

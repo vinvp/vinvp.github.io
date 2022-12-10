@@ -1,0 +1,193 @@
+@import './global.css';
+@import './header.css';
+@import './estudo.css';
+
+
+.Bio{
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.507);
+    grid-template-columns: 1fr 3fr;
+    border-radius: 2rem;
+    
+    gap: 2rem;
+    padding: 1rem;
+    margin: 10rem;
+    justify-items: center;
+    align-items: center;
+    position: relative;    
+
+}
+
+.Bio img{  
+    display: block;  
+
+    max-width: 14rem;
+    border-radius: 7rem;
+    
+}
+
+.Bio p{
+    display: flexbox;
+    font-size: 1rem;
+    line-height: 1rem;
+
+}
+
+
+
+
+
+footer h1, footer h2,footer h3,footer h4,footer h5,footer h6,footer p{
+    font-size: 1rem;
+    line-height: 1.7rem;
+    text-align: center;
+    
+}
+
+.lista-habilidades::before{
+    content: ". . .";
+    font-size: 10rem;  
+    position:absolute;
+    margin-top: -13rem; 
+    color: rgba(0, 255, 255, 0.048);    
+    border-radius: 3px;
+    justify-self: center ;
+
+}
+.lista-habilidades{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    gap:2rem;
+    margin:2rem;
+}
+.lista-habilidades li{
+    display: grid;
+    grid-template-rows:2fr 0.01fr repeat(4, 1fr) ;          
+    border-radius: 1rem;
+    background-color: rgba(255, 0, 0, 0.50);
+    justify-items: left;
+    align-items: baseline;    
+    padding: 2rem;
+    padding-top: 1rem;
+    
+}
+.lista-habilidades li p {
+    margin-top: 1rem;
+}
+.lista-habilidades h2{
+    justify-self: center;
+    align-self: center;
+}
+
+.trilhaprofissional{
+    margin-top: 5rem;
+    display: grid;    
+    justify-items: center;
+    align-items: top;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 1rem;
+    padding: 2rem;
+    
+    background: rgba(0, 0, 0, 0.782);
+}
+.trilhaprofissional::before{
+    content: "";
+    background-color: rgba(255, 0, 0, 0.11);
+    position:absolute;
+    margin-left: -1200px;
+    margin-top: 100px;
+    width: 50px;
+    height: 10px;
+    border-radius: 3px;
+    align-self: right;
+
+}
+.tittp, .titest{
+    font-size: 6rem;
+    padding: 2rem;
+   grid-row: 1;
+    grid-column: 1/4;
+    color: rgb(209, 209, 209);
+}
+
+.tp{
+    grid-row: 2;
+    color: rgb(189, 189, 189);
+    background-color: rgba(0, 255, 255, 0.048);
+    padding: 4px;
+    border-radius: 1rem;
+}
+.tp h2{
+    margin-top: 1rem;
+    color: white;
+}
+
+
+
+@media (max-width: 1000px){
+    
+    .lista-habilidades, h2,p{
+        display: grid;
+        grid-template-columns:1fr;    
+        justify-content: center;     
+        gap: auto;
+        padding: auto;
+        margin: auto;
+        font-size: 20px;
+        
+    }
+    .lista-habilidades li{
+        font-size: 10px;
+        gap: auto;
+        padding: auto;
+        justify-content: center;
+        text-align: center;
+        grid-template-rows: 1fr 0.5fr;
+        
+    }
+    .Bio::before{
+        content:none;
+        
+    }
+
+
+}
+@media (max-width: 820px){
+    .Bio{
+        grid-template-columns: 1fr;
+        margin: 2rem;
+    }
+    .Bio img{         
+        max-width: 7rem;
+        border-radius: 7rem;
+        
+    }
+}
+
+@media (max-width: 650px) {
+    body{
+        background-color: black;
+        background-image: none;
+    }
+    .trilhaprofissional{
+        display: grid;
+        grid-template-columns: 1fr;
+       
+    }
+    .tp{
+        grid-row: auto;
+        grid-column: 1;
+        width: 100%;
+    }
+    .tittp, .titest{
+        font-size: 3rem;
+        padding: 2rem;
+        grid-row: auto;
+        grid-column:1;
+        color: rgb(209, 209, 209);
+    }
+           
+    
+    
+}

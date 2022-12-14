@@ -126,6 +126,9 @@ footer h1, footer h2,footer h3,footer h4,footer h5,footer h6,footer p{
 
 
 @media (max-width: 1000px){
+    .lista-habilidades{        
+        justify-items: center;
+    }
     
     .lista-habilidades, h2,p{
         display: grid;
@@ -133,17 +136,19 @@ footer h1, footer h2,footer h3,footer h4,footer h5,footer h6,footer p{
         justify-content: center;     
         gap: auto;
         padding: auto;
-        margin: auto;
+        margin: 10px;
         font-size: 20px;
         
     }
     .lista-habilidades li{
         font-size: 10px;
-        gap: auto;
-        padding: auto;
+        gap: 0;
+        padding: 0;
         justify-content: center;
         text-align: center;
+        align-self: center;
         grid-template-rows: 1fr 0.5fr;
+        width: 80%;      
         
     }
     .Bio::before{
